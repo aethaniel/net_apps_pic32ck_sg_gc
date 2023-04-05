@@ -103,7 +103,7 @@ uint32_t    drvGmacQueEvents;     //Priority Queue Event Status
 void DRV_PIC32CGMAC_LibInit(DRV_GMAC_DRIVER* pMACDrv) 
 {	
 	eth_registers_t *  pGmacRegs = (eth_registers_t *) pMACDrv->sGmacData.gmacConfig.ethModuleId;
-
+	    
     pGmacRegs->ETH_CTRLA = ETH_CTRLA_ENABLE(1);
     while(pGmacRegs->ETH_SYNCB)
     {

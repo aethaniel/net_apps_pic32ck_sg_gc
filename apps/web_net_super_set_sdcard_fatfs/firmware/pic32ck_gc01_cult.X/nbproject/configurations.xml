@@ -625,8 +625,8 @@
             <logicalFolder name="gmac" displayName="gmac" projectFiles="true">
               <logicalFolder name="src" displayName="src" projectFiles="true">
                 <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
-                  <itemPath>../src/config/pic32ck_gc01_cult/driver/gmac/src/dynamic/drv_gmac_lib_pic32CK.c</itemPath>
                   <itemPath>../src/config/pic32ck_gc01_cult/driver/gmac/src/dynamic/drv_gmac.c</itemPath>
+                  <itemPath>../src/config/pic32ck_gc01_cult/driver/gmac/src/dynamic/drv_gmac_lib_pic32ck.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
@@ -685,7 +685,6 @@
                 <itemPath>../src/config/pic32ck_gc01_cult/library/tcpip/src/iperf.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult/library/tcpip/src/ftp.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult/library/tcpip/src/tftpc.c</itemPath>
-                <itemPath>../src/config/pic32ck_gc01_cult/library/tcpip/src/zero_conf_multicast_dns.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult/library/tcpip/src/tftps.c</itemPath>
               </logicalFolder>
             </logicalFolder>

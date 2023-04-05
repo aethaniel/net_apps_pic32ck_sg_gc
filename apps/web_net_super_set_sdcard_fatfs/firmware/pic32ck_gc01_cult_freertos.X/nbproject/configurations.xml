@@ -660,8 +660,8 @@
             <logicalFolder name="gmac" displayName="gmac" projectFiles="true">
               <logicalFolder name="src" displayName="src" projectFiles="true">
                 <logicalFolder name="dynamic" displayName="dynamic" projectFiles="true">
-                  <itemPath>../src/config/pic32ck_gc01_cult_freertos/driver/gmac/src/dynamic/drv_gmac_lib_pic32CK.c</itemPath>
                   <itemPath>../src/config/pic32ck_gc01_cult_freertos/driver/gmac/src/dynamic/drv_gmac.c</itemPath>
+                  <itemPath>../src/config/pic32ck_gc01_cult_freertos/driver/gmac/src/dynamic/drv_gmac_lib_pic32ck.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
@@ -707,7 +707,6 @@
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/http_net.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/tcpip_announce.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/zero_conf_link_local.c</itemPath>
-                <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/zero_conf_multicast_dns.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/zero_conf_helper.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/telnet.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/ftpc.c</itemPath>

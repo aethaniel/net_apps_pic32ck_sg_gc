@@ -4370,12 +4370,37 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;ComponentGraph dnOrder=&quot;0&quot; id=&quot;PRESENTATION LAYER&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;0&quot; id=&quot;DATA LINK LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;drvExtPhyKsz8091&quot; x=&quot;30&quot; y=&quot;280&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;drvGmac&quot; x=&quot;30&quot; y=&quot;180&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;drvMiim&quot; x=&quot;180&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpipNetConfig&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;__ROOTVIEW&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;APPLICATION LAYER&quot;&gt;
+      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipAnnounce&quot; x=&quot;30&quot; y=&quot;400&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipBerkeleyApi&quot; x=&quot;30&quot; y=&quot;1280&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpipDhcp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpipDhcpServer&quot; x=&quot;30&quot; y=&quot;1920&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;tcpipDhcpcv6&quot; x=&quot;30&quot; y=&quot;1800&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;tcpipDns&quot; x=&quot;30&quot; y=&quot;140&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;tcpipDnss&quot; x=&quot;30&quot; y=&quot;2060&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;tcpipFtpc&quot; x=&quot;30&quot; y=&quot;1440&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;8&quot; id=&quot;tcpipFtps&quot; x=&quot;30&quot; y=&quot;1680&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;9&quot; id=&quot;tcpipHttpNet&quot; x=&quot;30&quot; y=&quot;640&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;10&quot; id=&quot;tcpipIperf&quot; x=&quot;30&quot; y=&quot;1560&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;11&quot; id=&quot;tcpipNbns&quot; x=&quot;30&quot; y=&quot;520&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;12&quot; id=&quot;tcpipSmtpc&quot; x=&quot;30&quot; y=&quot;240&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;13&quot; id=&quot;tcpipSntp&quot; x=&quot;30&quot; y=&quot;780&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;14&quot; id=&quot;tcpipTelnet&quot; x=&quot;30&quot; y=&quot;1020&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;15&quot; id=&quot;tcpipTftpc&quot; x=&quot;30&quot; y=&quot;1140&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;16&quot; id=&quot;tcpipTftps&quot; x=&quot;30&quot; y=&quot;880&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;17&quot; id=&quot;tcpipZeroConf&quot; x=&quot;30&quot; y=&quot;2160&quot;/&gt;
+      &lt;/ElementPositions&gt;
+    &lt;/ComponentGraph&gt;
+    &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;BSP_PIC32CK_GC01_Curiosity_Ultra&quot; x=&quot;180&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;FreeRTOS&quot; x=&quot;440&quot; y=&quot;23&quot;/&gt;
@@ -4400,21 +4425,7 @@
         &lt;ElementPosition dnOrder=&quot;20&quot; id=&quot;sys_time&quot; x=&quot;581&quot; y=&quot;18&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;BASIC CONFIGURATION&quot;&gt;
-      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipCmd&quot; x=&quot;30&quot; y=&quot;160&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipStack&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-      &lt;/ElementPositions&gt;
-    &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;3&quot; id=&quot;DATA LINK LAYER&quot;&gt;
-      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;drvExtPhyKsz8091&quot; x=&quot;30&quot; y=&quot;280&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;drvGmac&quot; x=&quot;30&quot; y=&quot;180&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;drvMiim&quot; x=&quot;180&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpipNetConfig&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-      &lt;/ElementPositions&gt;
-    &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;4&quot; id=&quot;NETWORK LAYER&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;3&quot; id=&quot;NETWORK LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipArp&quot; x=&quot;30&quot; y=&quot;140&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipIPv4&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
@@ -4424,30 +4435,19 @@
         &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;tcpipNdp&quot; x=&quot;30&quot; y=&quot;540&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;GraphSettings canvasHeight=&quot;414&quot; canvasWidth=&quot;291&quot; dnOrder=&quot;5&quot;/&gt;
-    &lt;ComponentGraph dnOrder=&quot;6&quot; id=&quot;APPLICATION LAYER&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;4&quot; id=&quot;TRANSPORT LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipAnnounce&quot; x=&quot;30&quot; y=&quot;400&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipBerkeleyApi&quot; x=&quot;30&quot; y=&quot;1280&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpipDhcp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpipDhcpServer&quot; x=&quot;30&quot; y=&quot;1920&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;tcpipDhcpcv6&quot; x=&quot;30&quot; y=&quot;1800&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;tcpipDns&quot; x=&quot;30&quot; y=&quot;140&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;tcpipDnss&quot; x=&quot;30&quot; y=&quot;2060&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;tcpipFtpc&quot; x=&quot;30&quot; y=&quot;1440&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;8&quot; id=&quot;tcpipFtps&quot; x=&quot;30&quot; y=&quot;1680&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;9&quot; id=&quot;tcpipHttpNet&quot; x=&quot;30&quot; y=&quot;640&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;10&quot; id=&quot;tcpipIperf&quot; x=&quot;30&quot; y=&quot;1560&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;11&quot; id=&quot;tcpipNbns&quot; x=&quot;30&quot; y=&quot;520&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;12&quot; id=&quot;tcpipSmtpc&quot; x=&quot;30&quot; y=&quot;240&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;13&quot; id=&quot;tcpipSntp&quot; x=&quot;30&quot; y=&quot;780&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;14&quot; id=&quot;tcpipTelnet&quot; x=&quot;30&quot; y=&quot;1020&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;15&quot; id=&quot;tcpipTftpc&quot; x=&quot;30&quot; y=&quot;1140&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;16&quot; id=&quot;tcpipTftps&quot; x=&quot;30&quot; y=&quot;880&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;17&quot; id=&quot;tcpipZeroConf&quot; x=&quot;30&quot; y=&quot;2160&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipTcp&quot; x=&quot;30&quot; y=&quot;120&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipUdp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;7&quot; id=&quot;TCP/IP STACK&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;5&quot; id=&quot;BASIC CONFIGURATION&quot;&gt;
+      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipCmd&quot; x=&quot;30&quot; y=&quot;160&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipStack&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+      &lt;/ElementPositions&gt;
+    &lt;/ComponentGraph&gt;
+    &lt;ComponentGraph dnOrder=&quot;6&quot; id=&quot;TCP/IP STACK&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;APPLICATION LAYER&quot; x=&quot;220&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;BASIC CONFIGURATION&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
@@ -4457,10 +4457,10 @@
         &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;TRANSPORT LAYER&quot; x=&quot;400&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;8&quot; id=&quot;TRANSPORT LAYER&quot;&gt;
+    &lt;GraphSettings canvasHeight=&quot;414&quot; canvasWidth=&quot;291&quot; dnOrder=&quot;7&quot;/&gt;
+    &lt;ComponentGraph dnOrder=&quot;8&quot; id=&quot;PRESENTATION LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipTcp&quot; x=&quot;30&quot; y=&quot;120&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipUdp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
   &lt;/UserData&gt;
@@ -24352,10 +24352,6 @@
          <hash>2ef793c2575c80c0349edf97642dde832daa16b8ec9c162f9c39d527c8ee24b9</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32ck_gc01_cult_freertos\driver\gmac\src\dynamic\drv_gmac_lib_pic32CK.c</file>
-         <hash>495d9cc91be6d4c2215c78c180f9ac06efe2906a0bed8b23b7a29cb61a272ce3</hash>
-      </entry>
-      <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\dh.c</file>
          <hash>354a009037bac990a1fc35c3be0768bbf9a9cb19b047dadecea4bdb7c2dd91b8</hash>
       </entry>
@@ -24504,6 +24500,10 @@
          <hash>c6d3c05878b8c846e8e38e08a987831d360b30f9944a767f6ffda45c98331809</hash>
       </entry>
       <entry>
+         <file>..\src\config\pic32ck_gc01_cult_freertos\driver\gmac\src\dynamic\drv_gmac_lib_pic32ck.c</file>
+         <hash>495d9cc91be6d4c2215c78c180f9ac06efe2906a0bed8b23b7a29cb61a272ce3</hash>
+      </entry>
+      <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\logging.c</file>
          <hash>da58c0b5f8c9020acf79159f9b5f08533bc52d57cbd4e851f205ae492248708b</hash>
       </entry>
@@ -24541,7 +24541,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\configuration.h</file>
-         <hash>fd4aaaead57b6a63ebba8880d215c885d564aa92baaab334d4a6259b7904f4b9</hash>
+         <hash>1c5cc7a62c08f27ea8ccd590e9337a50b103baed862344f1c7ae960924c380ba</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\net_pres\pres\net_pres_transportapi.h</file>
@@ -24701,7 +24701,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\src\tcpip_commands.c</file>
-         <hash>401561c4350009fa5cd866d43341cd0fdce6907dd9bad30d48255da0c3236aba</hash>
+         <hash>6fdda73907a2cf84cf3176ee6371ab4056154f971817ef8b013becbb6239ed30</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\driver\miim\src\dynamic\drv_miim_device.h</file>
@@ -25341,7 +25341,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\src\tcp_private.h</file>
-         <hash>c77e0e7d77f1c732a93f80c207f25360ff4d4b4881bfeff2ac902797868c5650</hash>
+         <hash>e621923d17a163cb0255ffdd52e075b0eeb06e8f338c5a7ae5dbbbc9e508d008</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\src\zero_conf_link_local_private.h</file>
@@ -25505,7 +25505,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\driver\ethphy\src\dynamic\drv_extphy_regs.h</file>
-         <hash>8a616b98eeaa4f155988cb1d0e448540f555a08b8b73070ac5d407301b77a85d</hash>
+         <hash>e3bb19eace38f4eaba8a85e5b8e9b9cc074cf2079826c2bf1f040ec2d05655c2</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\system\time\sys_time.h</file>
@@ -25613,7 +25613,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\driver\ethphy\src\drv_ethphy_local.h</file>
-         <hash>7cedca2afe18d8521f45eea7336d5973fc8446a00cc2714fe1f40da95d6b9ba4</hash>
+         <hash>d4e057f3740a4cfec264ac4e36a1f17bcadd259c3e8be6acb2bfc086b15e0cd8</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\src\berkeley_api.c</file>
@@ -25721,7 +25721,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\tcpip_ethernet.h</file>
-         <hash>5fdd398e18b3311013f0f02adf26e2b7270df5fa864e427206856d4abf0af44d</hash>
+         <hash>bd85e30057daab11d9fd829c985c1edb57a92f83120c5d8a7ede1f91f0efc065</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\error-ssl.h</file>
@@ -26037,7 +26037,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\driver\ethphy\src\dynamic\drv_extphy_ksz8091.c</file>
-         <hash>20b8e3567f0655ff2a2ebb2b9146e3fd9d520940fcd588100849faf11dc466ea</hash>
+         <hash>58aea8f27a4ca73406a2406317fa241e4f8bf62c5049e7c2f504ec319543a401</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\peripheral\pm\plib_pm.c</file>
@@ -26069,7 +26069,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\driver\ethphy\src\dynamic\drv_extphy_ksz8091.h</file>
-         <hash>cbd8418ea31d5146b9bded13e5cc6d5de03c6247202b4505b9fee9f165c01ef3</hash>
+         <hash>9edaadb558eeee120d54f246c9f1cbf8977d24476cede9c43fa69ddee9a1b436</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\system\cache\sys_cache.h</file>
@@ -26365,7 +26365,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\src\tcp.c</file>
-         <hash>661e8381dbda019014c9dde21e60ffee0f3d09ca85673e5565ba9748ef65bc5a</hash>
+         <hash>4ea9d1a520098b4587f6e311047e47ccf07dc7d20a4c56e41e57e76394ed4716</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\src\snmpv3_private.h</file>
@@ -26564,10 +26564,6 @@
          <hash>be30477d0d0f803a87b82199021b4986032330b4bfc2e03ec9090cc6472d4b2a</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\src\zero_conf_multicast_dns.c</file>
-         <hash>a58d6074447e4f23fbfc8e0b798e9a42405fa24915b3cc1c7cffa8408d07ee47</hash>
-      </entry>
-      <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\src\ftpc_manager.h</file>
          <hash>076b13bd84433ad321df8539d713c01fe82f20052a06c025631283717c9de21b</hash>
       </entry>
@@ -26629,7 +26625,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\driver\ethphy\src\dynamic\drv_ethphy.c</file>
-         <hash>8fc16e962500885c07c58d7361532b69718e946f43c7f738795b6c0dc4a1cd41</hash>
+         <hash>0ae158ba73d890192ad451649cd0a9dab055c0ed011421c23af1232f4a65fc5c</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\ripemd.c</file>
@@ -26721,7 +26717,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\driver\ethphy\drv_ethphy.h</file>
-         <hash>695f4267fc5c12b9985ce1d3d25fe0f25be99faf3bc624f56651452550f4570e</hash>
+         <hash>7cc27e53585ed34bba0ec27d2d59cab6d29580252687e5a3745c0d874f0a5749</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\instance\sercom6.h</file>

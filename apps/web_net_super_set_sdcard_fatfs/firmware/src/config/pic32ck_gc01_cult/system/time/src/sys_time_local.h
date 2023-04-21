@@ -111,10 +111,11 @@ typedef struct{
     SYS_STATUS status;
     const SYS_TIME_PLIB_INTERFACE*  timePlib;
     INT_SOURCE                      hwTimerIntNum;
-	uint32_t                        hwTimerTickFreq;
-    uint32_t                        hwTimerPeriodValue;   
+    uint32_t                        hwTimerTickFreq;
+    uint32_t                        hwTimerPeriodValue;
     volatile uint64_t               swCounter64;           /* Software 64-bit counter */
     uint8_t                         interruptNestingCount;
+    bool                            hwTimerIntStatus;
     SYS_TIME_TIMER_OBJ*             tmrActive;
     /* Mutex to protect access to the shared resources */
     OSAL_MUTEX_DECLARE(timerMutex);

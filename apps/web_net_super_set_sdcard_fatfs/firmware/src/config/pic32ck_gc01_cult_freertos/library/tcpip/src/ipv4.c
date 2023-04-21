@@ -3006,6 +3006,7 @@ IPV4_FILTER_HANDLE IPv4RegisterFilter(IPV4_FILTER_FUNC handler, bool active)
     if(ipv4MemH && handler)
     {
         IPV4_FILTER_LIST_NODE filtNode;
+        memset(&filtNode, 0, sizeof(filtNode));
         filtNode.handler = handler;
         filtNode.active = active;
 

@@ -75,8 +75,8 @@
 #include "system/sys_random_h2_adapter.h"
 #include "driver/gmac/drv_gmac.h"
 #include "peripheral/evsys/plib_evsys.h"
-#include "system/command/sys_command.h"
 #include "driver/sdmmc/drv_sdmmc.h"
+#include "system/command/sys_command.h"
 #include "peripheral/port/plib_port.h"
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
@@ -96,6 +96,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "PIC32CK2051GC01144"
+#define DEVICE_ARCH			 "CORTEX-M33"
+#define DEVICE_FAMILY		 "PIC32CK"
+#define DEVICE_SERIES		 "PIC32CKGC01"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 120000000

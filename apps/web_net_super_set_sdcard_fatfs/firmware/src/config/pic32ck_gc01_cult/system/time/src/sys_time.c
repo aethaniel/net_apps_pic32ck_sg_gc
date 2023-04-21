@@ -98,9 +98,9 @@ static bool SYS_TIME_ResourceLock(void)
          * Additionally, disable the interrupt to prevent it from modifying the
          * shared resources asynchronously */
 
-        if(OSAL_MUTEX_Lock(&gSystemCounterObj.timerMutex, OSAL_WAIT_FOREVER) == OSAL_RESULT_TRUE)
+        if(OSAL_MUTEX_Lock(&gSystemCounterObj.timerMutex, OSAL_WAIT_FOREVER) == OSAL_RESULT_SUCCESS)
         {
-            SYS_INT_SourceDisable(gSystemCounterObj.hwTimerIntNum);
+            gSystemCounterObj.hwTimerIntStatus = SYS_INT_SourceDisable(gSystemCounterObj.hwTimerIntNum);
             return true;
         }
         else
@@ -119,7 +119,7 @@ static bool SYS_TIME_ResourceLock(void)
 
 static void SYS_TIME_ResourceUnlock(void)
 {
-    SYS_INT_SourceEnable(gSystemCounterObj.hwTimerIntNum);
+    SYS_INT_SourceRestore(gSystemCounterObj.hwTimerIntNum, gSystemCounterObj.hwTimerIntStatus);
 
     if(gSystemCounterObj.interruptNestingCount == 0U)
     {
@@ -378,7 +378,7 @@ static void SYS_TIME_PLIBCallback(uint32_t status, uintptr_t context)
     SYS_TIME_COUNTER_OBJ* counterObj = (SYS_TIME_COUNTER_OBJ *)&gSystemCounterObj;
     SYS_TIME_TIMER_OBJ* tmrActive = counterObj->tmrActive;
 
-    counterObj->swCounter64++; 
+    counterObj->swCounter64++;
 
     if (tmrActive != NULL)
     {
@@ -409,7 +409,7 @@ static SYS_TIME_HANDLE SYS_TIME_TimerObjectCreate(
     }
     if((gSystemCounterObj.status == SYS_STATUS_READY) && (period > 0U) && (period >= count))
     {
-        tmr = timers; 
+        tmr = timers;
         while(tmr < &timers[SYS_TIME_MAX_TIMERS])
         {
             if(tmr->inUse == false)
@@ -442,6 +442,7 @@ static SYS_TIME_HANDLE SYS_TIME_TimerObjectCreate(
     return tmrHandle;
 }
 
+/* MISRA C-2012 Rule 11.3 deviated:1 Deviation record ID -  H3_MISRAC_2012_R_11_3_DR_1 */
 static void SYS_TIME_CounterInit(const SYS_MODULE_INIT* init)
 {
     SYS_TIME_COUNTER_OBJ* counterObj = (SYS_TIME_COUNTER_OBJ *)&gSystemCounterObj;
@@ -459,6 +460,8 @@ static void SYS_TIME_CounterInit(const SYS_MODULE_INIT* init)
     counterObj->timePlib->timerStart();
 }
 
+/* MISRAC 2012 deviation block end */
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: System Interface Functions
@@ -471,7 +474,7 @@ SYS_MODULE_OBJ SYS_TIME_Initialize( const SYS_MODULE_INDEX index, const SYS_MODU
         return SYS_MODULE_OBJ_INVALID;
     }
     /* Create mutex to guard from multiple contesting threads */
-    if(OSAL_MUTEX_Create(&gSystemCounterObj.timerMutex) != OSAL_RESULT_TRUE)
+    if(OSAL_MUTEX_Create(&gSystemCounterObj.timerMutex) != OSAL_RESULT_SUCCESS)
     {
         return SYS_MODULE_OBJ_INVALID;
     }
@@ -529,11 +532,11 @@ uint32_t SYS_TIME_FrequencyGet ( void )
 uint64_t SYS_TIME_Counter64Get ( void )
 {
     SYS_TIME_COUNTER_OBJ * counterObj = (SYS_TIME_COUNTER_OBJ *)&gSystemCounterObj;
-    uint64_t counter64 = 0;    
+    uint64_t counter64 = 0;
     bool interruptState;
 
-	interruptState = SYS_INT_Disable();	
-	
+	interruptState = SYS_INT_Disable();
+
     counter64 = counterObj->swCounter64;
 
     SYS_INT_Restore(interruptState);
@@ -561,6 +564,8 @@ void SYS_TIME_CounterSet ( uint32_t count )
     SYS_INT_Restore(interruptState);
 }
 
+/* MISRA C-2012 Rule 10.8 deviated:2 Deviation record ID -  H3_MISRAC_2012_R_10_8_DR_1 */
+
 uint32_t  SYS_TIME_CountToUS ( uint32_t count )
 {
     return (uint32_t) (((uint64_t)count * 1000000u) / gSystemCounterObj.hwTimerTickFreq);
@@ -571,19 +576,24 @@ uint32_t  SYS_TIME_CountToMS ( uint32_t count )
     return (uint32_t) (((uint64_t)count * 1000u) / gSystemCounterObj.hwTimerTickFreq);
 }
 
+/* MISRA C-2012 Rule 10.1 deviated:2 Deviation record ID -  H3_MISRAC_2012_R_10_1_DR_1 */
+
+/* MISRAC 2012 deviation block end */
+
 uint32_t SYS_TIME_USToCount ( uint32_t us )
 {
-    uint32_t count = (((uint64_t)us * gSystemCounterObj.hwTimerTickFreq) / 1000000);
+    uint32_t count = (uint32_t)(((uint64_t)us * gSystemCounterObj.hwTimerTickFreq) / 1000000UL);
 
     return count;
 }
 
 uint32_t SYS_TIME_MSToCount ( uint32_t ms )
 {
-    uint32_t count = (((uint64_t)ms * gSystemCounterObj.hwTimerTickFreq) / 1000);
+    uint32_t count = (uint32_t)(((uint64_t)ms * gSystemCounterObj.hwTimerTickFreq) / 1000UL);
 
     return count;
 }
+/* MISRAC 2012 deviation block end */
 
 // *****************************************************************************
 // *****************************************************************************

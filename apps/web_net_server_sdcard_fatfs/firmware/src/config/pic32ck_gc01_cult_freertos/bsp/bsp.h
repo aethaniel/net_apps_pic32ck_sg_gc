@@ -40,8 +40,8 @@
 *******************************************************************************/
 // DOM-IGNORE-END
 
-#ifndef _BSP_H
-#define _BSP_H
+#ifndef BSP_H
+#define BSP_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -60,12 +60,15 @@
 // Section: BSP Macros
 // *****************************************************************************
 // *****************************************************************************
+#define pic32ck_gc01_curiosity_ultra
+#define BSP_NAME             "pic32ck_gc01_curiosity_ultra"
+
 
 
 /*** LED Macros for LED0 ***/
-#define LED0_Toggle()     (PORT_REGS->GROUP[3].PORT_OUTTGL = 1 << 20)
-#define LED0_On()         (PORT_REGS->GROUP[3].PORT_OUTCLR = 1 << 20)
-#define LED0_Off()        (PORT_REGS->GROUP[3].PORT_OUTSET = 1 << 20)
+#define LED0_Toggle()     (PORT_REGS->GROUP[3].PORT_OUTTGL = 1UL << 20)
+#define LED0_On()         (PORT_REGS->GROUP[3].PORT_OUTCLR = 1UL << 20)
+#define LED0_Off()        (PORT_REGS->GROUP[3].PORT_OUTSET = 1UL << 20)
 
 /*** SWITCH Macros for SW1 ***/
 #define SW1_Get()     ((PORT_REGS->GROUP[3].PORT_IN >> 2) & 0x01)
@@ -105,7 +108,6 @@
 
   Example:
     <code>
-    //Initialize the BSP
     BSP_Initialize();
     </code>
 
@@ -115,7 +117,7 @@
 
 void BSP_Initialize(void);
 
-#endif // _BSP_H
+#endif // BSP_H
 
 /*******************************************************************************
  End of File

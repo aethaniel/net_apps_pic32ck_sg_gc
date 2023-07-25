@@ -3,11 +3,11 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.net_apps_pic32ck_sg_gc_tcpip_tcp_server_pic32ck_gc01_curiosity_ultra",
+		"name": "com.microchip.mcu32.mplabx.project.net_apps_pic32ck_sg_gc_tcpip_tcp_client_pic32ck_gc01_curiosity_ultra",
 		"version": "3.0.0",
-		"displayName": "TCP/IP TCP Server Application Example for PIC32CK_GC Family",
-		"projectName": "tcpip_tcp_server",
-		"shortDescription": "The TCP/IP TCP Server configuration demonstrates creating a network server that uses the MPLAB Harmony TCP API to create a TCP/IP echo server on port 9760.",
+		"displayName": "TCP/IP TCP Client Example for PIC32CK_GC Family",
+		"projectName": "tcpip_tcp_client",
+		"shortDescription": "The TCP Client configuration demonstrates creating a network client with the MPLAB Harmony TCP API to make a TCP/IP connection to a web server.",
 		"ide": {
 			"name": "MPLABX",
 			"semverRange": ">=6.05.0"
@@ -46,7 +46,7 @@
 				"Harmony",
 				"Middleware",
 				"TCP/IP",
-				"TCPIP_TCP_SERVER"
+				"TCPIP_TCP_CLIENT"
 			]
 		],
 		"peripherals": [

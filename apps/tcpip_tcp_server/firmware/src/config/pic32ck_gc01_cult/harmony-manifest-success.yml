@@ -4,13 +4,13 @@
 
 
 project: tcpip_tcp_server
-creation_date: 2023-07-21T16:10:11.752+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2023-07-27T09:23:32.212+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.3.7
-mcc_core_version: v5.5.0
+mcc_core_version: v5.5.7
 mplabx_version: v6.10        # if MPLAB X plugin only
-harmony_version: v1.2.0
+harmony_version: v1.3.2
 compiler: XC32 (v4.30) 
 
 modules:

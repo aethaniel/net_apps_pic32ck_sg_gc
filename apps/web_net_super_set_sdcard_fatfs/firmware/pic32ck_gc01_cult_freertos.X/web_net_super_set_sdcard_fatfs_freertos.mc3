@@ -255,7 +255,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.2.0"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.2"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -4379,22 +4379,8 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;ComponentGraph dnOrder=&quot;0&quot; id=&quot;NETWORK LAYER&quot;&gt;
-      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipArp&quot; x=&quot;30&quot; y=&quot;140&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipIPv4&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpipIPv6&quot; x=&quot;30&quot; y=&quot;320&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpipIcmp&quot; x=&quot;30&quot; y=&quot;220&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;tcpipIcmpv6&quot; x=&quot;30&quot; y=&quot;460&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;tcpipNdp&quot; x=&quot;30&quot; y=&quot;540&quot;/&gt;
-      &lt;/ElementPositions&gt;
-    &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;PRESENTATION LAYER&quot;&gt;
-      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-      &lt;/ElementPositions&gt;
-    &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;APPLICATION LAYER&quot;&gt;
+    &lt;GraphSettings canvasHeight=&quot;414&quot; canvasWidth=&quot;291&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;APPLICATION LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipAnnounce&quot; x=&quot;30&quot; y=&quot;400&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipBerkeleyApi&quot; x=&quot;30&quot; y=&quot;1280&quot;/&gt;
@@ -4416,20 +4402,13 @@
         &lt;ElementPosition dnOrder=&quot;17&quot; id=&quot;tcpipZeroConf&quot; x=&quot;30&quot; y=&quot;2160&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;3&quot; id=&quot;TRANSPORT LAYER&quot;&gt;
-      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipTcp&quot; x=&quot;30&quot; y=&quot;120&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipUdp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-      &lt;/ElementPositions&gt;
-    &lt;/ComponentGraph&gt;
-    &lt;GraphSettings canvasHeight=&quot;414&quot; canvasWidth=&quot;291&quot; dnOrder=&quot;4&quot;/&gt;
-    &lt;ComponentGraph dnOrder=&quot;5&quot; id=&quot;BASIC CONFIGURATION&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;BASIC CONFIGURATION&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipCmd&quot; x=&quot;30&quot; y=&quot;160&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipStack&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;6&quot; id=&quot;DATA LINK LAYER&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;3&quot; id=&quot;DATA LINK LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;drvExtPhyKsz8091&quot; x=&quot;30&quot; y=&quot;280&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;drvGmac&quot; x=&quot;30&quot; y=&quot;180&quot;/&gt;
@@ -4437,32 +4416,22 @@
         &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpipNetConfig&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;7&quot; id=&quot;__ROOTVIEW&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;4&quot; id=&quot;NETWORK LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;BSP_PIC32CK_GC01_Curiosity_Ultra&quot; x=&quot;180&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;FreeRTOS&quot; x=&quot;440&quot; y=&quot;23&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;HarmonyCore&quot; x=&quot;250&quot; y=&quot;60&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;TCP/IP STACK&quot; x=&quot;622&quot; y=&quot;501&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;cmsis&quot; x=&quot;30&quot; y=&quot;220&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;core&quot; x=&quot;30&quot; y=&quot;180&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;dfp&quot; x=&quot;30&quot; y=&quot;80&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;drv_sdmmc&quot; x=&quot;438&quot; y=&quot;631&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;8&quot; id=&quot;evsys&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;9&quot; id=&quot;lib_crypto&quot; x=&quot;228&quot; y=&quot;442&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;10&quot; id=&quot;lib_wolfcrypt&quot; x=&quot;10&quot; y=&quot;512&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;11&quot; id=&quot;lib_wolfssl&quot; x=&quot;234&quot; y=&quot;544&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;12&quot; id=&quot;pm&quot; x=&quot;30&quot; y=&quot;120&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;13&quot; id=&quot;rtc&quot; x=&quot;371&quot; y=&quot;187&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;14&quot; id=&quot;sdmmc0&quot; x=&quot;256&quot; y=&quot;753&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;15&quot; id=&quot;sercom5&quot; x=&quot;2&quot; y=&quot;355&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;16&quot; id=&quot;sys_command&quot; x=&quot;594&quot; y=&quot;162&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;17&quot; id=&quot;sys_console&quot; x=&quot;189&quot; y=&quot;194&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;18&quot; id=&quot;sys_debug&quot; x=&quot;606&quot; y=&quot;338&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;19&quot; id=&quot;sys_fs&quot; x=&quot;626&quot; y=&quot;622&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;20&quot; id=&quot;sys_time&quot; x=&quot;581&quot; y=&quot;18&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipArp&quot; x=&quot;30&quot; y=&quot;140&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipIPv4&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;tcpipIPv6&quot; x=&quot;30&quot; y=&quot;320&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;tcpipIcmp&quot; x=&quot;30&quot; y=&quot;220&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;tcpipIcmpv6&quot; x=&quot;30&quot; y=&quot;460&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;tcpipNdp&quot; x=&quot;30&quot; y=&quot;540&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;ComponentGraph dnOrder=&quot;8&quot; id=&quot;TCP/IP STACK&quot;&gt;
+    &lt;ComponentGraph dnOrder=&quot;5&quot; id=&quot;PRESENTATION LAYER&quot;&gt;
+      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;net_Pres&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+      &lt;/ElementPositions&gt;
+    &lt;/ComponentGraph&gt;
+    &lt;ComponentGraph dnOrder=&quot;6&quot; id=&quot;TCP/IP STACK&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;APPLICATION LAYER&quot; x=&quot;220&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;BASIC CONFIGURATION&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
@@ -4470,6 +4439,37 @@
         &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;NETWORK LAYER&quot; x=&quot;580&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;PRESENTATION LAYER&quot; x=&quot;30&quot; y=&quot;100&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;TRANSPORT LAYER&quot; x=&quot;400&quot; y=&quot;20&quot;/&gt;
+      &lt;/ElementPositions&gt;
+    &lt;/ComponentGraph&gt;
+    &lt;ComponentGraph dnOrder=&quot;7&quot; id=&quot;TRANSPORT LAYER&quot;&gt;
+      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipTcp&quot; x=&quot;30&quot; y=&quot;120&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;tcpipUdp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+      &lt;/ElementPositions&gt;
+    &lt;/ComponentGraph&gt;
+    &lt;ComponentGraph dnOrder=&quot;8&quot; id=&quot;__ROOTVIEW&quot;&gt;
+      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;BSP_PIC32CK_GC01_Curiosity_Ultra&quot; x=&quot;26&quot; y=&quot;18&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;FreeRTOS&quot; x=&quot;19&quot; y=&quot;518&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;HarmonyCore&quot; x=&quot;206&quot; y=&quot;105&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;TCP/IP STACK&quot; x=&quot;481&quot; y=&quot;419&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;cmsis&quot; x=&quot;23&quot; y=&quot;190&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;core&quot; x=&quot;23&quot; y=&quot;230&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;dfp&quot; x=&quot;26&quot; y=&quot;50&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;drv_sdmmc&quot; x=&quot;213&quot; y=&quot;600&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;8&quot; id=&quot;evsys&quot; x=&quot;25&quot; y=&quot;85&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;9&quot; id=&quot;lib_crypto&quot; x=&quot;209&quot; y=&quot;523&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;10&quot; id=&quot;lib_wolfcrypt&quot; x=&quot;21&quot; y=&quot;366&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;11&quot; id=&quot;lib_wolfssl&quot; x=&quot;209&quot; y=&quot;434&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;12&quot; id=&quot;pm&quot; x=&quot;24&quot; y=&quot;135&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;13&quot; id=&quot;rtc&quot; x=&quot;405&quot; y=&quot;64&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;14&quot; id=&quot;sdmmc0&quot; x=&quot;51&quot; y=&quot;686&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;15&quot; id=&quot;sercom5&quot; x=&quot;22&quot; y=&quot;268&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;16&quot; id=&quot;sys_command&quot; x=&quot;472&quot; y=&quot;152&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;17&quot; id=&quot;sys_console&quot; x=&quot;205&quot; y=&quot;204&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;18&quot; id=&quot;sys_debug&quot; x=&quot;474&quot; y=&quot;281&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;19&quot; id=&quot;sys_fs&quot; x=&quot;397&quot; y=&quot;660&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;20&quot; id=&quot;sys_time&quot; x=&quot;581&quot; y=&quot;18&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
   &lt;/UserData&gt;
@@ -24564,7 +24564,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\configuration.h</file>
-         <hash>1668462881a27f5f8c41797d32cd917dbab5d06b6b5ac5a1d29bd15a6fc9dde5</hash>
+         <hash>f7873dd7c501fdd36c4ef1cf2ecc600c07dd8842d5a116e990fcece49143cff1</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\net_pres\pres\net_pres_transportapi.h</file>
@@ -25684,7 +25684,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\definitions.h</file>
-         <hash>e5fd3bd4490b4a01b5002bde23e7dc342c3005f61e06edc75031cd66e64c2b64</hash>
+         <hash>56bc8288d624c5a4ed0e4e9e121536119ff3bb944c833c8a0a22b02f9a46fb13</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\crypto\src\crypto.c</file>
@@ -26336,7 +26336,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\system\fs\src\sys_fs.c</file>
-         <hash>62bc9b6487bb78c5a449bf1048a8a964f2d24a696fcb0671249e350a7fc7f140</hash>
+         <hash>e6f4b416098de46fc230e3ecfb99cad91106ac0e99ab808c2a6c0df391e233b5</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\port\pic32\crypt_sha224_hw.h</file>
@@ -26625,6 +26625,10 @@
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\dhcp.h</file>
          <hash>be30477d0d0f803a87b82199021b4986032330b4bfc2e03ec9090cc6472d4b2a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\src\zero_conf_multicast_dns.c</file>
+         <hash>a58d6074447e4f23fbfc8e0b798e9a42405fa24915b3cc1c7cffa8408d07ee47</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult_freertos\library\tcpip\src\ftpc_manager.h</file>

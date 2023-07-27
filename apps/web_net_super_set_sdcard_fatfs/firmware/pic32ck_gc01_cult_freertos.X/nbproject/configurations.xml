@@ -732,6 +732,7 @@
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/icmpv6.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/ndp.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/ipv6.c</itemPath>
+                <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/zero_conf_multicast_dns.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -1302,6 +1303,8 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-63ffffff"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/harmony/h3/net_apps_pic32ck_sg_gc/apps/web_net_super_set_sdcard_fatfs/firmware/pic32ck_gc01_cult_freertos.X/debug/pic32ck_gc01_cult_freertos/pic32ck_gc01_cult_freertos_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>
@@ -1321,7 +1324,6 @@
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
         <property key="toolpack.updateoptions.packversion" value="1.9.1000"/>
-        <property key="x.erase.key" value="0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF"/>
       </pkob4hybrid>
     </conf>
   </confs>

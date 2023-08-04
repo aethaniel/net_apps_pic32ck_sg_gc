@@ -717,6 +717,9 @@
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/smtpc.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/http_net.c</itemPath>
                 <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/tcpip_announce.c</itemPath>
+                <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/ndp.c</itemPath>
+                <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/icmpv6.c</itemPath>
+                <itemPath>../src/config/pic32ck_gc01_cult_freertos/library/tcpip/src/ipv6.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -1023,7 +1026,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.30</languageToolchainVersion>
+        <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -1288,7 +1291,7 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-63ffffff"/>
         <property key="programmerToGoFilePath"
-                  value="C:/harmony/h3/net_apps_pic32ck_sg_gc/apps/web_net_server_sdcard_fatfs/firmware/pic32ck_gc01_cult_freertos.X/debug/pic32ck_gc01_cult_freertos/pic32ck_gc01_cult_freertos_ptg"/>
+                  value="C:/00_Niy/Repos/H3_BitBucket/core_apps_pic32ck_sg_gc/apps/system/console_debug/sys_console_debug_uart_read_write/firmware/pic32ck_gc01_cult_freertos.X/debug/pic32ck_gc01_cult_freertos/pic32ck_gc01_cult_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>

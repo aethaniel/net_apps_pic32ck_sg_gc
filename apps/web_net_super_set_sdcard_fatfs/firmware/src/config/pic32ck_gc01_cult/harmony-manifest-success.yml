@@ -4,7 +4,7 @@
 
 
 project: web_net_super_set_sdcard_fatfs
-creation_date: 2023-08-04T09:24:51.295+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2023-08-07T10:40:34.508+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.3.7
@@ -18,7 +18,7 @@ modules:
     - {name: "core", version: "v3.13.1"}
     - {name: "dev_packs", version: "v3.17.0"}
     - {name: "wolfssl", version: "v5.4.0"}
-    - {name: "net", version: "v3.10.0-7-ga92fecf"}
+    - {name: "net", version: "v3.10.0-8-ge3b7035"}
     - {name: "bsp", version: "v3.16.1"}
     - {name: "crypto", version: "v3.8.0"}
 

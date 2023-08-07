@@ -25314,7 +25314,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\configuration.h</file>
-         <hash>bc5913c9e8f89988f41bb4885b57a31c73edd1a69c06ce69d0767533534973fb</hash>
+         <hash>591c527e813c9fcea7f2d909a05aad974718d90775af388b9ba8ae35bcf9fec5</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\component\ac.h</file>
@@ -25422,7 +25422,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\definitions.h</file>
-         <hash>ec674dd2032c44fa6062518929345ebe4994dd81ba786134fcba60ef78684ee3</hash>
+         <hash>2d6c53d22418cedbf29211d8abddf1cb17140d0012665549f0fc76465f2cd3e1</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\startup_xc32.c</file>

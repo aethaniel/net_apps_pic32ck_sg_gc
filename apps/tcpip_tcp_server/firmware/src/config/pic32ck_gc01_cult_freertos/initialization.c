@@ -718,9 +718,9 @@ void SYS_Initialize ( void* data )
 	BSP_Initialize();
     EVSYS_Initialize();
 
-    PM_Initialize();
-
     SERCOM5_USART_Initialize();
+
+    PM_Initialize();
 
 
 

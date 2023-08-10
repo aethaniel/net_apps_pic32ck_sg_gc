@@ -12,14 +12,14 @@ The applications demonstrate the typical usage of Harmony 3 TCP/IP Stack on a ha
 - None
 
 ### Known Issues
-- None
+- XC32 v4.30 compiler has a known issue wherein applications built with certain configurations could cause a runtime exception. It is recommended to use v4.21 of the XC32 compiler until a newer version becomes available.
 
 ### Development Tools
 
 - [MPLAB® X IDE v6.10](https://www.microchip.com/mplab/mplab-x-ide) or later
-- [MPLAB® XC32 C/C++ Compiler v4.21](https://www.microchip.com/mplab/compilers) or later
+- [MPLAB® XC32 C/C++ Compiler v4.21](https://www.microchip.com/mplab/compilers)
 - [MPLAB® Code Configurator (MCC) 5.3.7](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator) or later
-- [Harmony net repository, 3.10.0](https://github.com/Microchip-MPLAB-Harmony/net/tree/v3.10.0)
+- [Harmony net repository, 3.10.1](https://github.com/Microchip-MPLAB-Harmony/net/tree/v3.10.1)
 - [Harmony net\_apps\_pic32ck\_sg\_gc demo apps repositories, 3.0.0](https://github.com/Microchip-MPLAB-Harmony/net_apps_pic32ck_sg_gc/tree/v3.0.0)
 
 ### Development Kit Support
@@ -33,7 +33,7 @@ This release supports applications for the following development kit.
 
 ## Net release notes
 
-- See the [Net 3.10.0 Release notes](https://github.com/Microchip-MPLAB-Harmony/net/tree/v3.10.0)
+- See the [Net 3.10.1 Release notes](https://github.com/Microchip-MPLAB-Harmony/net/tree/v3.10.1)
 
 
 

@@ -3,28 +3,28 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.net_apps_pic32ck_sg_gc_tcpip_tcp_client_pic32ck_gc01_curiosity_ultra",
+		"name": "com.microchip.mcu32.mplabx.project.net_apps_pic32ck_sg_gc_tcpip_tcp_client_pic32ck_gc01_cult",
 		"version": "3.0.0",
-		"displayName": "TCP/IP TCP Client Example for PIC32CK_GC Family",
+		"displayName": "TCP/IP TCP Client Example for PIC32CK GC01 Family",
 		"projectName": "tcpip_tcp_client",
-		"shortDescription": "The TCP Client configuration demonstrates creating a network client with the MPLAB Harmony TCP API to make a TCP/IP connection to a web server.",
+		"shortDescription": "This application demonstrates usage of MPLAB Harmony TCP API to implement a TCP client that establishes TCP/IP connection to a TCP server.",
 		"ide": {
 			"name": "MPLABX",
-			"semverRange": ">=6.05.0"
+			"semverRange": ">=6.10.0"
 		},
 		"compiler": [
 			{
 				"name": "XC32",
-				"semverRange": ">=4.2.0"
+				"semverRange": ">=4.21.0"
 			}
 		],
 		"dfp": {
 			"name": "PIC32CK-GC_DFP",
-			"semverRange": "^1.0.9"
+			"semverRange": "1.0.131"
 		},
 		"configurator": {
 			"name": "MCC",
-			"semverRange": ">=5.2.2"
+			"semverRange": ">=5.5.7"
 		},
 		"device": {
 			"metaDataVersion": "1.0.0",
@@ -39,14 +39,13 @@
 		"author": "Microchip",
 		"subcategories": [
 			[
-				"Development Kit",
-				"PIC32CK-GC01 Curiosity Ultra board"
+				"Development Kit", "PIC32CK GC01 Curiosity Ultra"
 			],
 			[
-				"Harmony",
-				"Middleware",
-				"TCP/IP",
-				"TCPIP_TCP_CLIENT"
+				"Harmony", "Middleware", "TCP/IP", "TCPIP_TCP_CLIENT"
+			],
+			[
+				"Middleware", "TCP/IP", "TCPIP_TCP_CLIENT"
 			]
 		],
 		"peripherals": [
@@ -58,9 +57,8 @@
 			"Middleware",
 			"TCP/IP",
 			"PIC32CK2051GC01144",
-			"PIC32CK_GC Family",
-			"Ethernet MAC",
-			"GMAC"
+			"PIC32CK GC01 Family",
+			"Ethernet MAC"
 		],
 		"additionalData": {
 			"longDescription": {

@@ -13,7 +13,7 @@ MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded
 
 This repository contains the MPLAB® Harmony 3 Net library application examples for PIC32CK GC01 family
 
-- [Release Notes](./release_notes.md)
+- [Release Notes](release_notes.md)
 - [Microchip Software License Agreement](Microchip_SLA001.md)
 
 # Contents Summary
@@ -29,10 +29,10 @@ The following applications are provided to demonstrate the typical or interestin
 
 | Name | Description |
 | ---- | ----------- |
-| [tcpip_tcp_client](./docs/GUID-5E40D04E-DBA0-4956-9A02-1BC5D9B6ED48.html) | This example application shows a TCP Client demo using Harmony native API |
-| [tcpip_tcp_server](./docs/GUID-40D6A3FC-93DB-4291-8C99-8F27EB930E6C.html) | This example application shows a TCP Server demo using Harmony native API |
-| [web_net_server_sdcard_fatfs](./docs/GUID-D2F03FE2-FB49-46AA-9EB9-D402A7ECE4C9.html) | This example application shows a Web server with FAT FS file system on the external SD card |
-| [web_net_super_set_sdcard_fatfs](./docs/GUID-C5B4F3A0-F36F-4796-8A86-3603A5F822DA.html) | This example application shows a all modules built-in demo (IPv6, DHCPv6 server, telnet, etc.) running a web server with FAT FS file system on the external SD card |
+| [tcpip_tcp_client](docs/GUID-5E40D04E-DBA0-4956-9A02-1BC5D9B6ED48.html) | This example application shows a TCP Client demo using Harmony native API |
+| [tcpip_tcp_server](docs/GUID-40D6A3FC-93DB-4291-8C99-8F27EB930E6C.html) | This example application shows a TCP Server demo using Harmony native API |
+| [web_net_server_sdcard_fatfs](docs/GUID-D2F03FE2-FB49-46AA-9EB9-D402A7ECE4C9.html) | This example application shows a Web server with FAT FS file system on the external SD card |
+| [web_net_super_set_sdcard_fatfs](docs/GUID-C5B4F3A0-F36F-4796-8A86-3603A5F822DA.html) | This example application shows a all modules built-in demo (IPv6, DHCPv6 server, telnet, etc.) running a web server with FAT FS file system on the external SD card |
 ____
 
 
